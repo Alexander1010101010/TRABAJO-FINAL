@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyFacts - Verdades</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <h1>OnlyFacts</h1>
+            <p>Explora las verdades más fascinantes y comparte las tuyas.</p>
+        </div>
+        <nav class="main-nav">
+            <button id="menu-btn" class="menu-btn">Categorías</button>
+        </nav>
+    </header>
+    <div id="menu" class="categories-menu hidden">
+        <ul>
+            <li><a href="music.html">Música</a></li>
+            <li><a href="artists.html">Artistas</a></li>
+            <li><a href="songs.html">Canciones</a></li>
+            <li><a href="sports.html">Deportes</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="food.html">Comida</a></li>
+        </ul>
+    </div>
+    <section class="hero">
+        <h2>¡Descubre y comparte verdades!</h2>
+        <p>Selecciona una categoría y cuéntanos algo increíble que sepas.</p>
+    </section>
+    <section class="truth-box">
+        <h2>Tu Verdad</h2>
+        <form id="truth-form">
+            <label for="category">Elige una categoría:</label>
+            <select id="category" name="category">
+                <option value="music">Música</option>
+                <option value="artists">Artistas</option>
+                <option value="songs">Canciones</option>
+                <option value="sports">Deportes</option>
+                <option value="series">Series</option>
+            </select>
+
+            <label for="truth">Escribe tu verdad:</label>
+            <textarea id="truth" name="truth" rows="5" placeholder="Escribe aquí..."></textarea>
+
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+    </section>
+    <footer class="main-footer">
+        <p>&copy; 2024 OnlyFacts. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
